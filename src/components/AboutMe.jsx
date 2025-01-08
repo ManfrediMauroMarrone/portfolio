@@ -3,8 +3,8 @@ import Title from "./Title";
 
 function AboutMe() {
   return (
-    <section className="h-sectionHeight">
-      <div className="flex justify-center">
+    <section id="aboutMe" className="h-sectionHeight">
+      <div className="flex justify-center py-6">
         <Title text={"About Me"} />
       </div>
       <div className="text-4xl flex p-10 items-center h-3/4">
