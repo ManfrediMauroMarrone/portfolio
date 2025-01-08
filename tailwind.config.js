@@ -14,6 +14,9 @@ export default {
       },
       height: {
         sectionHeight: '40rem'
+      },
+      margin: {
+        negativeTop: -2
       }
     },
   },
