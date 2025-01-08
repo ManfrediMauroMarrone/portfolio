@@ -11,8 +11,8 @@ function Home() {
   return (
     <div>
       <Navbar />
+      <Intro/>
       <Container>
-        <Intro/>
         <AboutMe/>
         <Skills/>
         <Experience/>

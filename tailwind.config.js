@@ -7,13 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#008080'
+        primary: '#008080',
+        whiteText: '#FFFFFF'
       },
       fontFamily: {
         customFont: ['Roboto Condensed', 'sans-serif']
       },
       height: {
-        sectionHeight: '40rem'
+        sectionHeight: '40rem',
       },
       margin: {
         negativeTop: -2

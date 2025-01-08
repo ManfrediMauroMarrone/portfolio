@@ -53,11 +53,11 @@ const experience = [
 
 function Experience() {
   return (
-    <section id="experience" className="h-sectionHeight">
+    <section id="experience">
       <div className="flex justify-center py-6">
         <Title text={"Work Experience"} />
       </div>
-      <div className="flex p-10 items-center h-3/4">
+      <div className="flex p-10 items-center">
         <div className="h-full flex items-center justify-center">
           <ul className="whitespace-pre-line">
             {experience.map(item => {

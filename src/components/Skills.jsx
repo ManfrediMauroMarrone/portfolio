@@ -17,7 +17,7 @@ import {
 
 function Skills() {
   return (
-    <section id="skills" className="h-sectionHeight">
+    <section id="skills" className="lg:h-sectionHeight">
       <div className="flex justify-center py-6">
         <Title text={"Skills"} />
       </div>
@@ -36,7 +36,7 @@ function Skills() {
             stretch: 0,
             depth: 120,
             modifier: 1,
-            slideShadows: true,
+            slideShadows: false,
           }}
           pagination={false}
           modules={[Autoplay, EffectCoverflow, Pagination]}
@@ -67,7 +67,7 @@ function Skills() {
             <img src="src\assets\images\git.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <div className="h-80 flex items-center">
+            <div className="h-24 lg:h-80 flex items-center">
               <img src="src\assets\images\sass.png" />
             </div>
           </SwiperSlide>

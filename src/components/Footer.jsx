@@ -3,7 +3,7 @@ import Container from "./Container";
 
 function Footer() {
   return (
-    <footer>
+    <footer id="contact" className="mt-10">
       <svg
         className="svg-curve"
         viewBox="0 0 1440 79"
@@ -17,11 +17,11 @@ function Footer() {
       </svg>
       <div className="bg-primary">
         <Container>
-          <div className="text-white flex justify-between p-10 mt-negativeTop">
+          <div className="text-whiteText flex justify-between p-6 lg:p-10 mt-negativeTop text-sm lg:text-lg">
             <a href="https://www.linkedin.com/in/manfredi-mauro-marrone-364153196/" target="_blank" rel="noopener noreferrer">
               My LinkedIn Profile
             </a>
-            <p>© 2025 Manfredi Marrone. Tutti i diritti riservati.</p>
+            <p>© 2025 Manfredi Marrone. All right reserved.</p>
           </div>
         </Container>
       </div>

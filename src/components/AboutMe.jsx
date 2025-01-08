@@ -3,13 +3,13 @@ import Title from "./Title";
 
 function AboutMe() {
   return (
-    <section id="aboutMe" className="h-sectionHeight">
+    <section id="aboutMe" className="lg:h-sectionHeight">
       <div className="flex justify-center py-6">
         <Title text={"About Me"} />
       </div>
-      <div className="text-4xl flex p-10 items-center h-3/4">
-        <div className="w-1/2">
-            <div className="rounded-lg w-3/4 overflow-hidden">
+      <div className="flex flex-col lg:flex-row  p-10 items-center h-3/4">
+        <div className="w-1/2 pb-6 lg:pb-0">
+            <div className="rounded-lg lg:w-3/4 overflow-hidden">
               <img
                 className="object-contain"
                 src="src\assets\images\th.jpg"
@@ -17,7 +17,7 @@ function AboutMe() {
               />
             </div>
         </div>
-        <div className="w-1/2 h-full flex items-center justify-center">
+        <div className="lg:w-1/2 h-full flex items-center justify-center text-xl lg:text-3xl">
           <p className="whitespace-pre-line">
             Since I was a child, video games have always held a special place in
             my life. This passion, combined with an innate curiosity for
