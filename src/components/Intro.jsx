@@ -18,7 +18,7 @@ function Intro() {
         targets: ".letter",
         opacity: [0, 1],
         easing: "easeInOutQuad",
-        duration: 2250,
+        duration: 600,
         delay: (el, i) => 100 * (i + 1),
       })
       .add({
@@ -26,7 +26,7 @@ function Intro() {
         opacity: 0,
         duration: 1000,
         easing: "easeOutExpo",
-        delay: 1000,
+        delay: 2000,
       });
   }, []);
 
