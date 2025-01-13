@@ -32,7 +32,7 @@ function Skills() {
   return (
     <section id="skills" className="lg:h-sectionHeight">
       <div className="flex justify-center py-6">
-        <Title text={"Skills"} />
+        <Title text={"Technical Skills"} />
       </div>
       <div className="py-20">
         <Swiper

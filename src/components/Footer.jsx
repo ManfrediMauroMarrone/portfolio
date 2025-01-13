@@ -17,10 +17,19 @@ function Footer() {
       </svg>
       <div className="bg-primary">
         <Container>
-          <div className="text-whiteText flex justify-between p-6 lg:p-10 mt-negativeTop text-sm lg:text-lg">
-            <a href="https://www.linkedin.com/in/manfredi-mauro-marrone-364153196/" target="_blank" rel="noopener noreferrer">
-              My LinkedIn Profile
-            </a>
+          <div className="text-whiteText flex justify-between items-center p-6 lg:p-10 mt-negativeTop text-sm lg:text-lg">
+            <div className="flex flex-col">
+              <a
+                href="https://www.linkedin.com/in/manfredi-mauro-marrone-364153196/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-line-effect-footer"
+              >
+                My LinkedIn Profile
+              </a>
+              <a href="mailto:manfredi.marrone@gmail.com" className="hover-line-effect-footer">Send me an email</a>
+            </div>
+
             <p>© 2025 Manfredi Marrone. All right reserved.</p>
           </div>
         </Container>
