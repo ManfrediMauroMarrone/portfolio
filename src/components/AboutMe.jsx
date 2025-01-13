@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "./Title";
+import th from "../assets/images/th.jpg"
 
 function AboutMe() {
   return (
@@ -12,7 +13,7 @@ function AboutMe() {
             <div className="rounded-lg lg:w-3/4 overflow-hidden">
               <img
                 className="object-contain"
-                src="src\assets\images\th.jpg"
+                src={th}
                 alt="web developer"
               />
             </div>
