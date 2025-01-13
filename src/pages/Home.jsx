@@ -15,8 +15,8 @@ function Home() {
       <Container>
         <AboutMe/>
         <Skills/>
-        <Experience/>
       </Container>
+      <Experience/>
       <Footer/>
     </div>
   );
