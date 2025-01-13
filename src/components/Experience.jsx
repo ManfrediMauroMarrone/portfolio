@@ -7,7 +7,7 @@ const experience = [
   {
     id: 1,
     company: "Mia Tech Academy",
-    title: "Frond End Tutor",
+    title: "Front End Tutor",
     date: "July 2024 - Present day",
     content: [
       "Provide personalized assistance to students in developing skills in HTML, CSS, JavaScript, and modern front-end frameworks.",
@@ -31,7 +31,7 @@ const experience = [
     id: 3,
     company: "Lipary Technology",
     title: "Front End Developer",
-    date: "October 2023 - February 2024",
+    date: "October 2022 - February 2023",
     content: [
       "Developed reusable components and implemented the website’s styling using modern frameworks, ensuring visual consistency and adherence to the design system.",
       "Collaborated with the backend team to integrate APIs and synchronize data.",
