@@ -10,7 +10,7 @@ function AboutMe() {
       </div>
       <div className="flex flex-col lg:flex-row  p-10 items-center h-3/4">
         <div className="w-1/2 pb-6 lg:pb-0">
-            <div className="rounded-lg lg:w-3/4 overflow-hidden">
+            <div className="rounded-lg lg:w-3/5 overflow-hidden">
               <img
                 className="object-contain"
                 src={th}
