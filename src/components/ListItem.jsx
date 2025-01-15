@@ -1,17 +1,30 @@
 import React from "react";
 
-function ListItem({company, title, date, content}) {
+function ListItem({ company, title, date, content }) {
   return (
-    <li>
-      <h3 className="text-2xl font-bold pt-8 text-primary">{company}</h3>
-      <p className="underline">{title}</p>
-      <p>{date}</p>
-      <ul>
-        {content.map((e, index) => {
-            return <li key={index}>{e}</li>
-        })}
-      </ul>
-    </li>
+    <>
+      <li className="w-3/4 text-sm lg:text-base lg:h-56 flex flex-col justify-start border-2 border-primary rounded-md p-5 transform shadow-xl transition duration-300 hover:scale-105">
+        <h3 className="text-2xl font-bold text-primary">{company}</h3>
+        <p className="underline">{title}</p>
+        <p>{date}</p>
+        <ul>
+          {content.map((e, index) => {
+            return <li key={index}>{e}</li>;
+          })}
+        </ul>
+      </li>
+
+      {/* <li className="w-3/4 flex flex-col justify-start bg-primary text-whiteText rounded-md p-5">
+        <h3 className="text-2xl font-bold text-amber-300">{company}</h3>
+        <p className="underline">{title}</p>
+        <p>{date}</p>
+        <ul>
+          {content.map((e, index) => {
+            return <li key={index}>{e}</li>;
+          })}
+        </ul>
+      </li> */}
+    </>
   );
 }
 

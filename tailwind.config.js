@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         primary: '#008080',
+        secondary: '#FCEEC9',
         whiteText: '#FFFFFF'
       },
       fontFamily: {
@@ -18,7 +19,10 @@ export default {
       },
       margin: {
         negativeTop: -2
-      }
+      },
+      width: {
+        itemListWidth: '50rem',
+      },
     },
   },
   plugins: [],

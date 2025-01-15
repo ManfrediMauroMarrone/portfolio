@@ -59,22 +59,20 @@ function Experience() {
         <div className="flex justify-center py-6">
           <Title text={"Work Experience"} />
         </div>
-        <div className="flex p-10 items-center">
-          <div className="h-full flex items-center justify-center">
-            <ul className="whitespace-pre-line">
-              {experience.map((item) => {
-                return (
-                  <ListItem
-                    key={item.id}
-                    company={item.company}
-                    title={item.title}
-                    date={item.date}
-                    content={item.content}
-                  />
-                );
-              })}
-            </ul>
-          </div>
+        <div>
+          <ul className="whitespace-pre-line flex justify-center items-center gap-5 flex-col">
+            {experience.map((item) => {
+              return (
+                <ListItem
+                  key={item.id}
+                  company={item.company}
+                  title={item.title}
+                  date={item.date}
+                  content={item.content}
+                />
+              );
+            })}
+          </ul>
         </div>
       </Container>
     </section>
