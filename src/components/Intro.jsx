@@ -34,7 +34,7 @@ function Intro() {
     <>
       <section
         id="intro"
-        className="text-3xl p-6 lg:p-0 lg:text-5xl font-semibold bg-primary text-whiteText"
+        className="text-3xl p-6 lg:p-0 lg:text-5xl font-semibold bg-primary text-whiteText scroll-my-20"
       >
         <Container>
           <div className="flex flex-col lg:flex-row h-56 lg:h-sectionHeight">

@@ -54,7 +54,7 @@ const experience = [
 
 function Experience() {
   return (
-    <section id="experience" className="bg-">
+    <section id="experience" className="scroll-my-14">
       <Container>
         <div className="flex justify-center py-6">
           <Title text={"Work Experience"} />

@@ -1,9 +1,10 @@
 import React from "react";
 import Container from "./Container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
-    <footer id="contact" className="mt-10">
+    <footer id="contacts" className="mt-10">
       <svg
         className="svg-curve"
         viewBox="0 0 1440 79"
@@ -25,13 +26,13 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="hover-line-effect-footer w-fit"
               >
-                My LinkedIn Profile
+                <FontAwesomeIcon icon="fa-brands fa-linkedin" /> My LinkedIn Profile
               </a>
               <a
                 href="mailto:manfredi.marrone@gmail.com"
                 className="hover-line-effect-footer w-fit"
               >
-                Send me an email
+                <FontAwesomeIcon icon="fa-envelope" /> Send me an email
               </a>
             </div>
             <div className="sm:w-1/2 text-right">

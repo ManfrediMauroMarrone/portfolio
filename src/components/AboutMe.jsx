@@ -4,7 +4,7 @@ import th from "../assets/images/th.jpg"
 
 function AboutMe() {
   return (
-    <section id="aboutMe" className="lg:h-sectionHeight">
+    <section id="about" className="lg:h-sectionHeight scroll-my-14">
       <div className="flex justify-center py-6">
         <Title text={"About Me"} />
       </div>
