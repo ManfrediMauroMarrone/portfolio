@@ -13,17 +13,6 @@ function ListItem({ company, title, date, content }) {
           })}
         </ul>
       </li>
-
-      {/* <li className="w-3/4 flex flex-col justify-start bg-primary text-whiteText rounded-md p-5">
-        <h3 className="text-2xl font-bold text-amber-300">{company}</h3>
-        <p className="underline">{title}</p>
-        <p>{date}</p>
-        <ul>
-          {content.map((e, index) => {
-            return <li key={index}>{e}</li>;
-          })}
-        </ul>
-      </li> */}
     </>
   );
 }

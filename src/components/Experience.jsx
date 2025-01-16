@@ -53,13 +53,14 @@ const experience = [
 ];
 
 function Experience() {
+  const titleContent = <span><span className="underline decoration-secondary">Work</span> Experience</span>
   return (
     <section id="experience" className="scroll-my-14">
       <Container>
-        <div className="flex justify-center py-6">
-          <Title text={"Work Experience"} />
+        <div className="py-6 text-center lg:text-left">
+          <Title text={titleContent} />
         </div>
-        <div>
+        <div className="p-10">
           <ul className="whitespace-pre-line flex justify-center items-center gap-5 flex-col">
             {experience.map((item) => {
               return (

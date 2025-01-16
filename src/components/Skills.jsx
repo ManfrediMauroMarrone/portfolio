@@ -29,12 +29,13 @@ import {
 } from "swiper/modules";
 
 function Skills() {
+  const titleContent = <span><span className="underline decoration-secondary">Technical</span> Skills</span>
   return (
     <section id="skills" className="lg:h-sectionHeight scroll-my-14">
-      <div className="flex justify-center py-6">
-        <Title text={"Technical Skills"} />
+      <div className="py-6 text-center lg:text-left">
+        <Title text={titleContent} />
       </div>
-      <div className="py-20">
+      <div className="py-10">
         <Swiper
           autoplay={{
             delay: 1500,

@@ -3,10 +3,12 @@ import Title from "./Title";
 import th from "../assets/images/th.jpg"
 
 function AboutMe() {
+
+  const titleContent = <span><span className="underline decoration-secondary">About</span> Me</span>
   return (
     <section id="about" className="lg:h-sectionHeight scroll-my-14">
-      <div className="flex justify-center py-6">
-        <Title text={"About Me"} />
+      <div className="py-6 text-center lg:text-left">
+        <Title text={titleContent} />
       </div>
       <div className="flex flex-col lg:flex-row  p-10 items-center h-3/4">
         <div className="w-1/2 pb-6 lg:pb-0">

@@ -11,7 +11,7 @@ body {
 
 @layer utilities {
   .hover-line-effect {
-    --c: #008080; /* the color */
+    --c: #FBBF2A; /* the color */
     --s: 0.15em;
     padding-bottom: calc(2.1 * var(--s));
     background: conic-gradient(from 135deg at top, var(--c) 90deg, #0000 0) left

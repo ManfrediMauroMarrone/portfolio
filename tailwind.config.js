@@ -8,14 +8,14 @@ export default {
     extend: {
       colors: {
         primary: '#008080',
-        secondary: '#FCEEC9',
+        secondary: '#FBBF2A',
         whiteText: '#FFFFFF'
       },
       fontFamily: {
         customFont: ['Roboto Condensed', 'sans-serif']
       },
       height: {
-        sectionHeight: '40rem',
+        sectionHeight: '38rem',
       },
       margin: {
         negativeTop: -2
