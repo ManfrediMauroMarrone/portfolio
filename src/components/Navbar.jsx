@@ -10,7 +10,7 @@ function Navbar() {
         <nav className="p-5 flex justify-between text-xl font-semibold">
           <div className="nav-left font">
             <h1>
-              <a href="#intro" className="text-amber-400 text-lg lg:text-3xl">
+              <a href="#intro" className="text-secondary text-lg lg:text-3xl">
                 Manfredi Marrone
               </a>
             </h1>
