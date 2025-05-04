@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Title from "./Title";
-import th from "../../public/images/Foto-removebg-preview.png";
+import th from "../assets/images/Foto-removebg-preview.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -17,10 +17,10 @@ function AboutMe() {
   return (
     <section
       id="about"
-      className="lg:h-sectionHeight scroll-my-14"
+      className="lg:h-sectionHeight scroll-my-14 border-b-2"
       data-aos="fade-up"
     >
-      <div className="py-6 text-center lg:text-left">
+      <div className="pt-6 text-center lg:text-left">
         <Title text={titleContent} />
       </div>
       <div className="flex flex-col lg:flex-row  p-10 items-center h-3/4">
