@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Title from "./Title";
 import ListItem from "./ListItem";
 import Container from "./Container";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const experience = [
   {
@@ -53,9 +55,18 @@ const experience = [
 ];
 
 function Experience() {
-  const titleContent = <span><span className="underline decoration-secondary">Work</span> Experience</span>
+  const titleContent = (
+    <span>
+      <span className="underline decoration-secondary">Work</span> Experience
+    </span>
+  );
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <section id="experience" className="scroll-my-14">
+    <section id="experience" className="scroll-my-14" data-aos="fade-up">
       <Container>
         <div className="py-6 text-center lg:text-left">
           <Title text={titleContent} />

@@ -12,7 +12,8 @@ export default {
         whiteText: '#FFFFFF'
       },
       fontFamily: {
-        customFont: ['Roboto Condensed', 'sans-serif']
+        customFont: ['Roboto Condensed', 'sans-serif'],
+        secondFont: ['Playwrite RO']
       },
       height: {
         sectionHeight: '38rem',
