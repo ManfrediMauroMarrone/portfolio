@@ -6,15 +6,15 @@ import "aos/dist/aos.css";
 
 //images
 
-import bootstrap from "../assets/images/bootstrap.png";
-import css from "../assets/images/css.png";
-import git from "../assets/images/git.png";
-import html from "../assets/images/html.png";
-import js from "../assets/images/js.png";
-import node from "../assets/images/node.png";
-import react from "../assets/images/react.png";
-import sass from "../assets/images/sass.png";
-import tailwind from "../assets/images/tailwind.png";
+import bootstrap from "../../public/images/bootstrap.png";
+import css from "../../public/images/css.png";
+import git from "../../public/images/git.png";
+import html from "../../public/images/html.png";
+import js from "../../public/images/js.png";
+import node from "../../public/images/node.png";
+import react from "../../public/images/react.png";
+import sass from "../../public/images/sass.png";
+import tailwind from "../../public/images/tailwind.png";
 
 // Import Swiper styles
 import "swiper/css";

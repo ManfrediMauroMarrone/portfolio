@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Title from "./Title";
-import th from "../assets/images/Foto-removebg-preview.png"
+import th from "../../public/images/Foto-removebg-preview.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
