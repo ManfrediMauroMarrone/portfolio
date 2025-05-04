@@ -14,12 +14,14 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-line-effect w-fit"
+                aria-label="Link to my LinkedIn Profile"
               >
                 <FontAwesomeIcon icon="fa-brands fa-linkedin" /> My LinkedIn Profile
               </a>
               <a
                 href="mailto:manfredi.marrone@gmail.com"
                 className="hover-line-effect w-fit"
+                aria-label="Click here to send me an email"
               >
                 <FontAwesomeIcon icon="fa-envelope" /> Send me an email
               </a>
