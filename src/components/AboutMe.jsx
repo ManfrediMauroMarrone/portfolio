@@ -1,18 +1,25 @@
 import React, { useEffect } from "react";
 import Title from "./Title";
-import th from "../../public/images/Foto-removebg-preview.png"
+import th from "../../public/images/Foto-removebg-preview.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function AboutMe() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
-   useEffect(() => {
-      AOS.init({ duration: 1000 });
-    }, []);
-
-  const titleContent = <span><span className="underline decoration-secondary">About</span> Me</span>
+  const titleContent = (
+    <span>
+      <span className="underline decoration-secondary">About</span> Me
+    </span>
+  );
   return (
-    <section id="about" className="lg:h-sectionHeight scroll-my-14" data-aos="fade-up">
+    <section
+      id="about"
+      className="lg:h-sectionHeight scroll-my-14"
+      data-aos="fade-up"
+    >
       <div className="py-6 text-center lg:text-left">
         <Title text={titleContent} />
       </div>
@@ -28,13 +35,13 @@ function AboutMe() {
           </p>
         </div>
         <div className="w-1/2 h-full pb-6 lg:pb-0 flex justify-center items-center">
-            <div className="rounded-lg hidden lg:w-3/5 lg:block overflow-hidden">
-              <img
-                className="object-contain w-4/5"
-                src={th}
-                alt="web developer"
-              />
-            </div>
+          <div className="rounded-lg hidden lg:w-3/5 lg:block overflow-hidden">
+            <img
+              className="object-contain w-4/5"
+              src={th}
+              alt="web developer"
+            />
+          </div>
         </div>
       </div>
     </section>
