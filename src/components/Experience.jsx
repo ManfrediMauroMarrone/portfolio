@@ -66,25 +66,27 @@ function Experience() {
   }, []);
 
   return (
-    <section id="experience" className="scroll-my-14" data-aos="fade-up">
+    <section id="experience" data-aos="fade-up">
       <Container>
-        <div className="py-6 text-center lg:text-left">
-          <Title text={titleContent} />
-        </div>
-        <div className="p-10">
-          <ul className="whitespace-pre-line flex justify-center items-center gap-5 flex-col">
-            {experience.map((item) => {
-              return (
-                <ListItem
-                  key={item.id}
-                  company={item.company}
-                  title={item.title}
-                  date={item.date}
-                  content={item.content}
-                />
-              );
-            })}
-          </ul>
+        <div className="scroll-my-14 border-b-2">
+          <div className="py-6 text-center lg:text-left">
+            <Title text={titleContent} />
+          </div>
+          <div className="p-10">
+            <ul className="whitespace-pre-line flex justify-center items-center gap-5 flex-col">
+              {experience.map((item) => {
+                return (
+                  <ListItem
+                    key={item.id}
+                    company={item.company}
+                    title={item.title}
+                    date={item.date}
+                    content={item.content}
+                  />
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </Container>
     </section>

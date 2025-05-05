@@ -27,7 +27,7 @@ function Navbar() {
                 <a href="#experience">Experience</a>
               </li>
               <li className="hover-line-effect">
-                <a href="#contacts">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ function Navbar() {
                 </MenuItem>
                 <MenuItem>
                   <a
-                    href="#contacts"
+                    href="#contact"
                     className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
                   >
                     Contacts

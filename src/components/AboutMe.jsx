@@ -23,7 +23,7 @@ function AboutMe() {
       <div className="pt-6 text-center lg:text-left">
         <Title text={titleContent} />
       </div>
-      <div className="flex flex-col lg:flex-row  p-10 items-center h-3/4">
+      <div className="flex flex-col lg:flex-row p-10 items-center h-3/4">
         <div className="lg:w-1/2 h-full flex items-center justify-center text-xl lg:text-3xl">
           <p className="whitespace-pre-line">
             Since I was a child, video games have always held a special place in
