@@ -5,9 +5,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { useForm, ValidationError } from "@formspree/react";
+import { toast } from 'react-toastify';
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("mrbqqgyo");
+  const [formData, setFormData] = useForm("mrbqqgyo");
 
   const titleContent = (
     <span>
@@ -19,9 +20,13 @@ function ContactForm() {
     AOS.init({ duration: 1000 });
   }, []);
 
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+  useEffect(() => {
+    if (formData.succeeded) {
+      toast.success("Your email was sent!");
+      document.getElementById("contact-form").reset();
+    }
+  }, [formData.succeeded]);
+
 
   return (
     <section id="contact" data-aos="fade-up">
@@ -44,7 +49,7 @@ function ContactForm() {
               </div>
             </div>
 
-            <form className="space-y-4" onSubmit={handleSubmit} action="https://formspree.io/f/mrbqqgyo" method="POST">
+            <form className="space-y-4" onSubmit={setFormData} method="POST" id="contact-form">
               <input
                 type="text"
                 id="name"
@@ -55,7 +60,7 @@ function ContactForm() {
               <ValidationError
                 prefix="Name"
                 field="name"
-                errors={state.errors}
+                errors={formData.errors}
               />
               <input
                 type="email"
@@ -67,7 +72,7 @@ function ContactForm() {
               <ValidationError
                 prefix="Email"
                 field="email"
-                errors={state.errors}
+                errors={formData.errors}
               />
               <input
                 type="text"
@@ -79,7 +84,7 @@ function ContactForm() {
               <ValidationError
                 prefix="Subject"
                 field="subject"
-                errors={state.errors}
+                errors={formData.errors}
               />
               <textarea
                 id="message"
@@ -91,11 +96,11 @@ function ContactForm() {
               <ValidationError
                 prefix="Message"
                 field="message"
-                errors={state.errors}
+                errors={formData.errors}
               />
               <button
                 type="submit"
-                disabled={state.submitting}
+                disabled={formData.submitting}
                 className="text-white bg-secondary hover:bg-[#007575] rounded-md text-[15px] font-medium px-4 py-2 w-full !mt-6"
               >
                 Send
