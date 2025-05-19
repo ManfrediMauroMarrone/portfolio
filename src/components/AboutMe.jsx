@@ -3,6 +3,7 @@ import Title from "./Title";
 import th from "../assets/images/Foto-removebg-preview.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import avatar from '../assets/images/OpenPeeps.png'
 
 function AboutMe() {
   useEffect(() => {
@@ -35,12 +36,13 @@ function AboutMe() {
           </p>
         </div>
         <div className="w-1/2 h-full pb-6 lg:pb-0 flex justify-center items-center">
-          <div className="rounded-lg hidden lg:w-3/5 lg:block overflow-hidden">
-            <img
+          <div className="rounded-lg hidden lg:block overflow-hidden">
+            {/* <img
               className="object-contain w-4/5"
               src={th}
               alt="web developer"
-            />
+            /> */}
+            <img src={avatar}/>
           </div>
         </div>
       </div>
